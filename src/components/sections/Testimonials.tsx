@@ -15,7 +15,7 @@ const Testimonials = () => {
           <CarouselContent>
             {testimonials.map((t) => (
               <CarouselItem key={t.author} className="md:basis-1/2 lg:basis-1/3">
-                <blockquote className="rounded-xl border p-6 h-full bg-card">
+                <blockquote className="rounded-2xl p-6 h-full glass gradient-border">
                   <p className="text-lg mb-4">“{t.quote}”</p>
                   <footer className="text-sm text-muted-foreground">— {t.author}</footer>
                 </blockquote>

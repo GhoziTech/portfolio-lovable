@@ -12,7 +12,7 @@ const Services = () => {
       <h2 className="font-display text-3xl md:text-4xl mb-10">Services</h2>
       <div className="grid md:grid-cols-3 gap-6">
         {services.map(({ icon: Icon, title, desc }) => (
-          <article key={title} className="rounded-xl border p-6 hover:shadow-glow transition-shadow">
+          <article key={title} className="rounded-2xl p-6 glass gradient-border hover:shadow-glow hover-lift transition-all">
             <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-primary text-primary-foreground">
               <Icon />
             </div>

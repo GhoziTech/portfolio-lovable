@@ -115,4 +115,14 @@
   .glass { backdrop-filter: blur(10px); background-color: hsl(var(--background)/0.6); border: 1px solid hsl(var(--foreground)/0.06); }
   .hover-scale { @apply transition-transform duration-200 hover:scale-[1.03]; }
   .story-link { @apply relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left; }
+
+  /* Neon gradient-inspired utilities */
+  .gradient-border {
+    background: linear-gradient(hsl(var(--card)), hsl(var(--card))) padding-box,
+                var(--gradient-primary) border-box;
+    border: 1px solid transparent;
+  }
+  .glass-strong { backdrop-filter: blur(16px); background-color: hsl(var(--background)/0.5); border: 1px solid hsl(var(--foreground)/0.08); }
+  .hover-lift { @apply transition-transform duration-300 hover:-translate-y-0.5 hover:scale-[1.01]; }
+  .chip-gradient { background-image: var(--gradient-accent); color: hsl(var(--primary-foreground)); @apply px-2 py-1 rounded-full text-[11px]/[14px]; }
 }

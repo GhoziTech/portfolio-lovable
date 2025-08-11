@@ -32,7 +32,7 @@ const ProjectCard = ({ image, title, description, tags }: ProjectCardProps) => {
       ref={ref}
       onMouseMove={handleMove}
       onMouseLeave={handleLeave}
-      className="group will-change-transform transition-transform duration-200 [transform-style:preserve-3d] rounded-xl border bg-card hover:shadow-glow overflow-hidden"
+      className="group will-change-transform transition-transform duration-200 [transform-style:preserve-3d] rounded-2xl gradient-border glass hover:shadow-glow overflow-hidden"
     >
       <div className="relative overflow-hidden">
         <img src={image} alt={`${title} project preview`} loading="lazy" className="w-full aspect-[3/2] object-cover group-hover:scale-[1.04] transition-transform duration-300" />
@@ -42,7 +42,7 @@ const ProjectCard = ({ image, title, description, tags }: ProjectCardProps) => {
         <p className="text-sm text-muted-foreground mb-3">{description}</p>
         <div className="flex flex-wrap gap-2 text-xs text-muted-foreground">
           {tags.map((t) => (
-            <span key={t} className="px-2 py-1 rounded-full bg-secondary">{t}</span>
+            <span key={t} className="chip-gradient">{t}</span>
           ))}
         </div>
       </div>

@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b">
-      <nav className="container mx-auto flex items-center justify-between py-4">
+    <header className="sticky top-0 z-50">
+      <nav className="container mx-auto my-3 flex items-center justify-between py-3 px-4 glass gradient-border rounded-2xl shadow-glow">
         <a href="#home" className="font-display text-xl tracking-wide text-gradient-primary">
           GhoziTech
         </a>

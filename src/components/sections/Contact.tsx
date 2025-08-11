@@ -19,7 +19,7 @@ const Contact = () => {
     <section id="contact" className="container mx-auto py-20">
       <h2 className="font-display text-3xl md:text-4xl mb-10">Contact</h2>
       <div className="grid md:grid-cols-2 gap-8">
-        <form onSubmit={onSubmit} className="rounded-xl border p-6 space-y-4 bg-card">
+        <form onSubmit={onSubmit} className="rounded-2xl p-6 space-y-4 glass gradient-border">
           <div>
             <label className="block text-sm mb-2">Name</label>
             <input className="w-full rounded-md border px-3 h-11 focus:outline-none focus:ring-2 focus:ring-ring transition-shadow" placeholder="Your name" required />
@@ -34,7 +34,7 @@ const Contact = () => {
           </div>
           <Button type="submit" variant="hero" size="lg" disabled={loading}>{loading ? "Sending..." : "Send Message"}</Button>
         </form>
-        <aside className="rounded-xl border p-6 bg-card">
+        <aside className="rounded-2xl p-6 glass gradient-border">
           <p className="text-muted-foreground mb-4">Prefer email or socials?</p>
           <ul className="space-y-3">
             <li className="flex items-center gap-3"><Mail /> <a className="story-link" href="mailto:hello@ghozitech.com">hello@ghozitech.com</a></li>
